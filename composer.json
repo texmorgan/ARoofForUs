@@ -6,13 +6,24 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*"
+        "laravel/framework": "5.1.*",
+        "league/fractal": "0.13.0",
+        "league/geotools": "@stable",
+        "aws/aws-sdk-php": "@stable",
+        "aws/aws-sdk-php-laravel": "@stable",
+        "graham-campbell/flysystem": "@stable",
+        "league/flysystem-aws-s3-v2": "@stable",
+        "airbrake/phpbrake": "dev-master",
+        "guzzlehttp/guzzle": "@stable",
+        "lucadegasperi/oauth2-server-laravel": "@stable",
+        "laravel/socialite": "@stable"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
-        "phpspec/phpspec": "~2.1"
+        "phpspec/phpspec": "~2.1",
+        "behat/behat":"@stable"
     },
     "autoload": {
         "classmap": [
