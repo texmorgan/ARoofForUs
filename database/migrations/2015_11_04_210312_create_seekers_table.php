@@ -14,11 +14,14 @@ class CreateSeekersTable extends Migration
     {
         Schema::create('seekers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('firstName');
-            $table->string('lastName');
+            $table->string('slug')->unique();
+            $table->string('firstName')->index();
+            $table->string('lastName')->index();
             $table->date('birthday');
             $table->string('gender');
-            $table->boolean('active');
+            $table->string('hair');
+            $table->string('eyes');
+            $table->boolean('active')->index();
             $table->timestamps();
         });
     }
